@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## Hyuko의 Spring boot 공부 노트 블로그
 
-You can use the [editor on GitHub](https://github.com/hyuk12/hyuk12-github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+[hyuko12 GitHub](https://github.com/hyuk12) 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### JPA 영속성 컨테스트
 
+JPA에서 가장 중요한 2가지  
+1. 객체와 관계형 데이터 베이스 매핑하기(정적)  
+2. 영속성 컨텍스트  
+    - 엔티티를 영구 저장하는 환경이라는 뜻
+    - EntityManger.persist(entity): ->  
+    엔티티를 영속성 컨텍스트라는 곳에 저장을 한다.  
+
+- 영속성 컨텍스트는 논리적인 개념이다.  
+  
+  
 ```markdown
-Syntax highlighted code block
+    영속성 컨텍스트의 종류
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+    - 영속(managed)
+        - 영속성 컨텍스트에 관리되는 상태
+        - 매니저 안에 객체를 넣었을 때
+    
+    - 비영속(new/transient)
+        - 영속성 컨텍스트와 전혀 관계가 없는 새로운 상태
+        - 사용할 객체만 생성한 단계
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hyuk12/hyuk12-github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
